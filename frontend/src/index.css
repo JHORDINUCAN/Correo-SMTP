@@ -1,0 +1,87 @@
+/* Reset y tipografía */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #74ABE2 0%, #5563DE 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Contenedor centrado */
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Tarjeta */
+.welcome-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  max-width: 360px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.welcome-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Título */
+.welcome-card h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #2C3E50;
+}
+
+/* Input */
+.welcome-card input[type="email"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+.welcome-card input[type="email"]:focus {
+  outline: none;
+  border-color: #5563DE;
+}
+
+/* Botón */
+.welcome-card button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #5563DE;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.welcome-card button:hover:not(:disabled) {
+  background: #3f4bb5;
+}
+.welcome-card button:disabled {
+  background: #a0a5e8;
+  cursor: not-allowed;
+}
+
+/* Toastify overrides */
+.Toastify__toast--success {
+  background: #ffffff;
+}
+.Toastify__toast--error {
+  background: #ffffff;
+}
